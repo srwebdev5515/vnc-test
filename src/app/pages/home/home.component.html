@@ -1,0 +1,25 @@
+<div class="header">
+    <button class="btn btn-primary" (click)="onToggleTheme('primary')">Primary Theme</button>
+    <button class="btn btn-secondary" (click)="onToggleTheme('secondary')">Secondary Theme</button>
+    <button class="btn btn-danger" (click)="onLogout()">Logout</button>
+</div>
+
+<div class="container">
+    <form [formGroup]="searchForm">
+        <div class="form-group">
+            <input type="text" class="form-control input-search" formControlName="key" />
+            <button class="btn btn-primary" (click)="onSearch()" [disabled]="searchForm.invalid">Search</button>
+        </div>
+    </form>
+
+    <div class="messages">
+        <div class="message" *ngFor="let x of messages">
+            <div>
+                <strong>{{ x.from }}</strong> {{ x.created | date: 'short' }}
+            </div>
+            <div>
+                {{ x.message }}
+            </div>
+        </div>
+    </div>
+</div>

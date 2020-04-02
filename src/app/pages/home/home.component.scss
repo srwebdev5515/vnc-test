@@ -1,0 +1,21 @@
+.header {
+    padding: 20px;
+    text-align: right;
+
+    .btn {
+        margin-left: 10px;
+    }
+}
+
+.input-search {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.message {
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 4px;
+}

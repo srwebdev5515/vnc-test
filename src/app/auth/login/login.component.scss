@@ -1,0 +1,14 @@
+.container {
+    .panel {
+        width: 600px;
+        max-width: 100%;
+        margin: 40px auto 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 40px;
+
+        .form-action {
+            margin-top: 30px;
+        }
+    }
+}
